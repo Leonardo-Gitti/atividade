@@ -1,0 +1,105 @@
+/* Estilo geral da página */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f7;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column; /* Organiza o conteúdo de cima para baixo */
+}
+
+/* Container principal */
+form {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-bottom: 20px; /* Espaçamento entre o formulário e o rodapé */
+}
+
+/* Título */
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1c1c1e;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #3a3a3c;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Input de data */
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #1c1c1e;
+    background-color: #f2f2f7;
+    border: 1px solid #c7c7cc;
+    border-radius: 10px;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Seta para dispositivos iOS */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #007aff;
+    cursor: pointer;
+}
+
+/* Botão de enviar */
+button {
+    background-color: #007aff;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efeito de clique no botão */
+button:hover {
+    background-color: #005db3;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Alinhar o resultado no rodapé */
+footer {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Mensagem de resultado */
+p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1c1c1e;
+}
